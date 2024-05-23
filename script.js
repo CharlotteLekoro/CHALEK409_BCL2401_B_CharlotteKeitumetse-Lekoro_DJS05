@@ -48,3 +48,19 @@ let store = createStore(counter);
 store.subscribe(() => {
   console.log("State changed:", store.getState());
 });
+
+// Example dispatches to test the store
+store.dispatch({ type: 'INCREMENT' }); // State changed: 1
+store.dispatch({ type: 'INCREMENT' }); // State changed: 2
+store.dispatch({ type: 'DECREMENT' }); // State changed: 1
+store.dispatch({ type: 'RESET' });     // State changed: 0
+
+// Scenario Checks
+console.log('Initial state:', store.getState()); // Scenario 1: Initial State Verification
+store.dispatch({ type: 'INCREMENT' });
+store.dispatch({ type: 'INCREMENT' });
+console.log('After increment:', store.getState()); // Scenario 2: Incrementing the Counter
+store.dispatch({ type: 'DECREMENT' });
+console.log('After decrement:', store.getState()); // Scenario 3: Decrementing the Counter
+store.dispatch({ type: 'RESET' });
+console.log('After reset:', store.getState()); // Scenario 4: Resetting the Counter
