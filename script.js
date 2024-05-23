@@ -26,7 +26,18 @@ function createStore(reducer) {
     state = reducer(state, action); //
     listeners.forEach((listener) => listener());
   };
+  // Subscribe to state changes
+  const subscribe = (listener) => {
+    //allows parts of application to register functions that should be called whenever the state changes
+    listeners.push(listener);
+    // Return an unsubscribe function
+    return () => {
+      listeners = listeners.filter((l) => l !== listener);
+    };
+  };
 
- 
+  // Initialize the state by dispatching an empty action
+  dispatch({});
 
- 
+  return { getState, dispatch, subscribe }; // returns the store API with getState, dispatch, subscribe methods
+}
