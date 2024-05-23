@@ -41,3 +41,10 @@ function createStore(reducer) {
 
   return { getState, dispatch, subscribe }; // returns the store API with getState, dispatch, subscribe methods
 }
+// Create the store with the counter reducer
+let store = createStore(counter);
+
+// Subscribe to state changes and log the new state to the console
+store.subscribe(() => {
+  console.log("State changed:", store.getState());
+});
