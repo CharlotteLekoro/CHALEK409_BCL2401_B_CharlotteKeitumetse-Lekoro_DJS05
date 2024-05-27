@@ -9,3 +9,6 @@ The output should be the changes in the state acoording to the check on the code
 
 The approach
 I first created the counter function,this stores the information about what should happen with the increment, decrement and reset state, a +1, -1 or a 0
+
+Challenges
+I find myself taking more time to complete the DJS shallenges that i did with the previous section, Even though we covered most of the concepts in JSL they are applied in a new way here so just when i though i knew how the concept was used it see it used differently
