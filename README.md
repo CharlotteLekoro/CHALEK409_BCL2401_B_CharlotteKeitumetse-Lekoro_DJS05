@@ -11,4 +11,5 @@ The approach
 I first created the counter function,this stores the information about what should happen with the increment, decrement and reset state, a +1, -1 or a 0
 
 Challenges
-I find myself taking more time to complete the DJS shallenges that i did with the previous section, Even though we covered most of the concepts in JSL they are applied in a new way here so just when i though i knew how the concept was used it see it used differently
+I find myself taking more time to complete the DJS shallenges that i did with the previous section, Even though we covered most of the concepts in JSL they are applied in a new way here so just when i though i knew how the concept was used it see it used differently. I went to do more reading on sites like geeks for geeks and and codeschool and i found them to help a lot. at times using just chatpgpt is not always useful in giving information or it may be that the concepts is explained better elsewhere so I will make sure I read up on the concepts from other sites and not just rely on one source
+
